@@ -1,0 +1,12 @@
+Create table ServiceBillDetail 
+(	
+	BILLID int identity primary key,
+	RESID varchar (6) not null,
+	SERID varchar(6),
+	BookDate date not null,
+	Quantity int not null default 1,
+	SerPrice int not null,
+	
+	foreign key (RESID) references dbo.Reservation (RESID),
+	foreign key (SERID) references dbo.Service (SERID)
+)

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="382.0" prefWidth="779.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FXMLService_UpdateProduct">
+   <children>
+      <Label layoutX="374.0" layoutY="140.0" prefHeight="51.0" prefWidth="130.0" text="PROID:" textFill="#45a9b1" AnchorPane.leftAnchor="374.0" AnchorPane.topAnchor="140.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" prefHeight="78.0" prefWidth="519.0" style="-fx-background-color: linear-gradient(from 15% 15% to 100% 100%,  #8ECBD0 ,  #D5EBED );" text="Update Product" textAlignment="CENTER" textFill="GREY" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Javanese Text" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="374.0" layoutY="198.0" prefHeight="51.0" prefWidth="130.0" text="Product's Name:" textFill="#45a9b1" AnchorPane.topAnchor="198.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtProID" layoutX="514.0" layoutY="140.0" prefHeight="51.0" prefWidth="250.0" AnchorPane.leftAnchor="514.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="140.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="374.0" layoutY="249.0" prefHeight="51.0" prefWidth="130.0" text="Active" textFill="#45a9b1">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableProduct" layoutX="14.0" layoutY="87.0" prefHeight="265.0" prefWidth="332.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="90.0">
+        <columns>
+          <TableColumn fx:id="colProID" prefWidth="75.0" text="ProID" />
+          <TableColumn fx:id="colProName" prefWidth="163.0" text="ProName" />
+            <TableColumn fx:id="ColActive" prefWidth="91.0" text="Active" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnSearch" layoutX="374.0" layoutY="87.0" prefHeight="31.0" prefWidth="107.0" style="-fx-background-color: #45a9b1; -fx-background-radius: 0;" text="Search" textFill="#fffefe">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="20.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/iconSearch.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXTextField fx:id="txtSearch" focusColor="#45a9b1" labelFloat="true" layoutX="514.0" layoutY="90.0" prefHeight="25.0" prefWidth="240.0" promptText="Pro - Name" unFocusColor="#45a9b1" AnchorPane.leftAnchor="515.0" AnchorPane.rightAnchor="15.0" />
+      <JFXTextField fx:id="txtProName" focusColor="#076850" labelFloat="true" layoutX="515.0" layoutY="208.0" prefHeight="31.0" prefWidth="250.0" unFocusColor="#076850" AnchorPane.leftAnchor="515.0" AnchorPane.rightAnchor="15.0" />
+      <JFXCheckBox fx:id="checkBoxActive" checkedColor="#45a9b1" ellipsisString="" layoutX="514.0" layoutY="249.0" prefHeight="51.0" prefWidth="37.0" textFill="#45a9b1" unCheckedColor="#1e3e40" AnchorPane.leftAnchor="515.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="634.0" layoutY="300.0" prefHeight="31.0" prefWidth="130.0" style="-fx-background-color: #45A9B1; -fx-background-radius: 0;" text="Update" textFill="#fff8f8" AnchorPane.bottomAnchor="45.0" AnchorPane.rightAnchor="15.0">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/iconDelete.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,2 @@
+insert into dbo.Employee
+values('EMP001', 'HCN Resort Management', 'Viet Nam', 1, 'phamchiconghinhsu@gmal.com', '0987654321', 'DEP001', 'POS001', 'admin', 'admin','ROL001', 1)

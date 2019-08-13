@@ -1,0 +1,15 @@
+create table Accessright
+(
+	ID int identity primary key not null,
+	EMPID varchar(6) not null,
+	HomePage bit not null,
+	BookRoomPage bit not null,
+	GuestPage bit not null,
+	RoomListPage bit not null,
+	EmployeePage bit not null,
+	ServicePage bit not null,
+	ViewPage bit not null,
+	HistoryPage bit not null,
+	AdminPage bit not null,
+	foreign key (EMPID) references dbo.Employee (EMPID)
+)  

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="579.0" prefWidth="878.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.FXMLHome_UserManual">
+    <stylesheets>
+        <URL value="@/Css/CSSMain.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="48.0" layoutY="34.0" prefHeight="62.0" prefWidth="250.0" text="Keyboard Shortcut:" textFill="#45a9b1" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="Javanese Text" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="72.0" prefHeight="51.0" prefWidth="80.0" text="Alt + H" textFill="#265d61" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="70.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="121.0" prefHeight="51.0" prefWidth="80.0" text="Alt + B" textFill="#265d61" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="120.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="171.0" prefHeight="51.0" prefWidth="80.0" text="Alt + G" textFill="#265d61" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="170.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="222.0" prefHeight="51.0" prefWidth="80.0" text="Alt + R" textFill="#265d61" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="220.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="273.0" prefHeight="51.0" prefWidth="80.0" text="Alt + E" textFill="#265d61" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="270.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="324.0" prefHeight="51.0" prefWidth="80.0" text="Alt + S" textFill="#265d61" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="320.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="375.0" prefHeight="51.0" prefWidth="80.0" text="Alt + V" textFill="#265d61" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="370.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="433.0" prefHeight="51.0" prefWidth="80.0" text="Alt + T" textFill="#265d61" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="420.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="490.0" prefHeight="51.0" prefWidth="80.0" text="Alt + A" textFill="#265d61" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="470.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="175.0" layoutY="70.0" prefHeight="51.0" prefWidth="205.0" text="Go to Home page" textFill="#265d61" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="70.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="195.0" layoutY="106.0" prefHeight="51.0" prefWidth="205.0" text="Go to BookRoom page" textFill="#265d61" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="120.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="180.0" layoutY="157.0" prefHeight="51.0" prefWidth="205.0" text="Go to Guest page" textFill="#265d61" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="170.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="195.0" layoutY="220.0" prefHeight="51.0" prefWidth="205.0" text="Go to Roomlist page" textFill="#265d61" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="220.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="168.0" layoutY="270.0" prefHeight="51.0" prefWidth="205.0" text="Go to Employee page" textFill="#265d61" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="270.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="168.0" layoutY="320.0" prefHeight="51.0" prefWidth="205.0" text="Go to Service page" textFill="#265d61" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="320.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="185.0" layoutY="361.0" prefHeight="51.0" prefWidth="205.0" text="Go to View page" textFill="#265d61" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="370.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="180.0" layoutY="412.0" prefHeight="51.0" prefWidth="205.0" text="Go to History page" textFill="#265d61" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="420.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="180.0" layoutY="463.0" prefHeight="51.0" prefWidth="205.0" text="Go to Admin page" textFill="#265d61" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="470.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

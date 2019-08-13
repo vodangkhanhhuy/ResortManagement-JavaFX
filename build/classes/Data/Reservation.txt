@@ -1,0 +1,15 @@
+Create table Reservation 
+(
+	RESID varchar(6) primary key,
+	ROOMID varchar(4) not null,
+	PASSPORT varchar(20) not null,
+	BookDate date not null,
+	DateOut date not null,
+	EMPID varchar(6) not null,
+	DateUse int not null,
+	ResPrice int not null,
+        Status bit not null,
+	foreign key (ROOMID) references dbo.Room (ROOMID),
+	foreign key (EMPID) references dbo.Employee (EMPID),
+	foreign key (PASSPORT) references dbo.Guest (PASSPORT)
+)

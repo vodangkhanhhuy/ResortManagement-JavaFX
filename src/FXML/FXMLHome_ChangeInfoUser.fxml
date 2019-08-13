@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="604.0" prefWidth="808.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FXMLHome_ChangeInfoUser">
+    <stylesheets>
+        <URL value="@/Css/CSSMain.css" />
+    </stylesheets>
+   <children>
+      <Label alignment="CENTER" layoutX="99.0" layoutY="14.0" prefHeight="51.0" prefWidth="174.0" text="Information" textFill="#265d61" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Javanese Text" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="164.0" prefHeight="51.0" prefWidth="115.0" text="Department:" textFill="#45a9b1" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="132.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelDepName" layoutX="170.0" layoutY="164.0" prefHeight="51.0" prefWidth="157.0" text="DepName" textFill="#265d61" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="433.0" AnchorPane.topAnchor="132.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="235.0" prefHeight="51.0" prefWidth="80.0" text="Postion:" textFill="#45a9b1" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="172.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPosName" layoutX="170.0" layoutY="229.0" prefHeight="51.0" prefWidth="347.0" text="PosName" textFill="#265d61" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="433.0" AnchorPane.topAnchor="172.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="92.0" prefHeight="51.0" prefWidth="80.0" text="EmpID:" textFill="#45a9b1" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="92.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelEMPID" layoutX="165.0" layoutY="92.0" prefHeight="51.0" prefWidth="217.0" text="EmpID" textFill="#265d61" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="92.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtName" focusColor="#076850" layoutX="457.0" layoutY="80.0" prefHeight="63.0" prefWidth="350.0" promptText="Name" unFocusColor="#076850" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="80.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPhone" focusColor="#076850" layoutX="406.0" layoutY="152.0" prefHeight="63.0" prefWidth="217.0" promptText="Phone" unFocusColor="#076850" AnchorPane.rightAnchor="181.0" AnchorPane.topAnchor="152.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="cbbGender" focusColor="#076850" labelFloat="true" layoutX="728.0" layoutY="152.0" prefHeight="63.0" prefWidth="122.0" promptText="Gender" unFocusColor="#076850" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="152.0" />
+      <JFXTextField fx:id="txtAddress" focusColor="#076850" layoutX="457.0" layoutY="223.0" prefHeight="63.0" prefWidth="350.0" promptText="Address" unFocusColor="#076850" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="223.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtEmail" focusColor="#076850" layoutX="457.0" layoutY="293.0" prefHeight="63.0" prefWidth="350.0" promptText="Email" unFocusColor="#076850" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="293.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtPassword" focusColor="#076850" layoutX="360.0" layoutY="362.0" prefHeight="63.0" prefWidth="350.0" promptText="Password" unFocusColor="#076850" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="362.0">
+         <font>
+            <Font name="Javanese Text" size="15.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXPasswordField fx:id="txtConfirmPassword" focusColor="#076850" layoutX="550.0" layoutY="432.0" prefHeight="63.0" prefWidth="350.0" promptText="Confirm Password" unFocusColor="#076850" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="432.0">
+         <font>
+            <Font name="Javanese Text" size="15.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="595.0" layoutY="524.0" prefHeight="31.0" prefWidth="115.0" style="-fx-background-color: #45A9B1; -fx-background-radius: 0;" text="Save" textFill="WHITE" AnchorPane.rightAnchor="50.0" />
+   </children>
+</AnchorPane>

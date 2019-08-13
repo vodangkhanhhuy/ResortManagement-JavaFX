@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FXMLChangePass">
+   <children>
+      <Pane layoutX="471.0" layoutY="10.0" prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: #369C8D;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="310.0" fitWidth="400.0" layoutX="13.0" layoutY="-15.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Images/CaptureLogin.PNG" />
+               </image>
+            </ImageView>
+            <Pane layoutX="-76.0" layoutY="361.0" prefHeight="56.0" prefWidth="529.0" rotate="20.0" style="-fx-background-color: #8DBBAC;" />
+            <Pane layoutX="-108.0" layoutY="390.0" prefHeight="290.0" prefWidth="527.0" rotate="16.0" style="-fx-background-color: #D2E0D9;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="204.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" rotate="-16.0">
+                     <image>
+                        <Image url="@../Images/iLogin.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <AnchorPane layoutX="400.0" layoutY="-6.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #e9ead9;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="idMess" layoutX="38.0" layoutY="389.0" prefHeight="43.0" prefWidth="258.0" textFill="#70ab98">
+               <font>
+                  <Font name="Javanese Text" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="58.0" layoutY="71.0" prefHeight="104.0" prefWidth="378.0" text="Change Password" textFill="#369c8d" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="64.0" AnchorPane.topAnchor="71.0">
+               <font>
+                  <Font name="Javanese Text" size="36.0" />
+               </font>
+            </Label>
+            <JFXPasswordField fx:id="idNewPass" focusColor="#369c8d" labelFloat="true" layoutX="71.0" layoutY="193.0" prefHeight="52.0" prefWidth="381.0" promptText="New Password" unFocusColor="#369c8d">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXPasswordField fx:id="idConfirm" focusColor="#369c8d" labelFloat="true" layoutX="71.0" layoutY="300.0" prefHeight="52.0" prefWidth="381.0" promptText="Confirm Password" unFocusColor="#369c8d">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="btnChange" buttonType="RAISED" layoutX="182.0" layoutY="454.0" prefHeight="37.0" prefWidth="150.0" style="-fx-background-color: #369C8D; -fx-background-radius: 0;" text="Change" textFill="WHITE" AnchorPane.leftAnchor="182.0" AnchorPane.rightAnchor="168.0" />
+            <Label fx:id="idRelogin" layoutX="335.0" layoutY="390.0" prefHeight="33.0" prefWidth="100.0" text="   Re-Login" textFill="#369c8d">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Pane layoutX="328.0" layoutY="415.0" prefHeight="1.0" prefWidth="100.0" style="-fx-background-color: #369c8d;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

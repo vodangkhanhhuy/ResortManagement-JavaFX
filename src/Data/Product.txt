@@ -1,0 +1,6 @@
+Create table Product
+ (
+	ProID varchar(6) not null primary key,
+	ProName varchar(50) not null,
+	Active bit not null
+ )

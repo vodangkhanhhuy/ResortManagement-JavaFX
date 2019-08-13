@@ -1,0 +1,6 @@
+Create table ImagesAvatar(
+	ID int identity primary key,
+	EMPID varchar(6) not null,
+	imageLink nvarchar(300),
+foreign key (EMPID) references dbo.Employee (EMPID)
+)

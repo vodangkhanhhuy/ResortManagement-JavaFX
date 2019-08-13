@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CheckMailController">
+   <children>
+      <Pane layoutX="471.0" layoutY="10.0" prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: #369C8D;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="310.0" fitWidth="400.0" layoutX="13.0" layoutY="-15.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Images/CaptureLogin.PNG" />
+               </image>
+            </ImageView>
+            <Pane layoutX="-76.0" layoutY="361.0" prefHeight="56.0" prefWidth="529.0" rotate="20.0" style="-fx-background-color: #8DBBAC;" />
+            <Pane layoutX="-108.0" layoutY="390.0" prefHeight="290.0" prefWidth="527.0" rotate="16.0" style="-fx-background-color: #D2E0D9;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="204.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" rotate="-16.0">
+                     <image>
+                        <Image url="@../Images/iLogin.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <AnchorPane layoutX="400.0" layoutY="-6.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #e9ead9;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="130.0" layoutY="22.0" prefHeight="148.0" prefWidth="244.0" text="Connect Sever" textFill="#369c8d" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="126.0" AnchorPane.topAnchor="22.0">
+               <font>
+                  <Font name="Javanese Text" size="36.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="idEmail" disable="true" focusColor="#369c8d" labelFloat="true" layoutX="85.0" layoutY="145.0" prefHeight="49.0" prefWidth="350.0" promptText="Email" unFocusColor="#369c8d">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="idCode" focusColor="#369c8d" labelFloat="true" layoutX="85.0" layoutY="247.0" prefHeight="49.0" prefWidth="350.0" promptText="Code" unFocusColor="#369c8d">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="btnNext" buttonType="RAISED" layoutX="303.0" layoutY="444.0" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #369C8D; -fx-background-radius: 0;" textFill="WHITE" AnchorPane.leftAnchor="303.0" AnchorPane.rightAnchor="77.0">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Images/iconNext.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <Label fx:id="idMess" layoutX="62.0" layoutY="353.0" prefHeight="59.0" prefWidth="410.0" textFill="#70ab98">
+               <font>
+                  <Font name="Javanese Text" size="15.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnBack" buttonType="RAISED" layoutX="100.0" layoutY="444.0" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #369C8D; -fx-background-radius: 0;" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Images/iconBack.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

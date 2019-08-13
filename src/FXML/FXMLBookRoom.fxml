@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="1171.0" prefWidth="1368.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FXMLBookRoom">
+   <children>
+      <AnchorPane prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%,  #8ECBD0 ,  #D5EBED );" AnchorPane.leftAnchor="235.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <Label fx:id="txtRoleName" layoutX="695.0" layoutY="1.0" prefHeight="50.0" prefWidth="83.0" text="Employee" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="336.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Javanese Text" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtUsername" layoutX="876.0" layoutY="5.0" prefHeight="50.0" prefWidth="190.0" text="ID..." AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Javanese Text" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="35.0" fitWidth="30.0" layoutX="698.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="419.0" AnchorPane.topAnchor="10.0">
+               <image>
+                  <Image url="@../Images/iconPos2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imageView_avatar" fitHeight="30.0" fitWidth="30.0" layoutX="819.0" layoutY="11.0" pickOnBounds="true" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="295.0" AnchorPane.topAnchor="10.0">
+               <image>
+                  <Image url="@../Images/iconAccount.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnLogout" buttonType="RAISED" layoutX="1049.0" layoutY="10.0" prefHeight="31.0" prefWidth="76.0" style="-fx-background-color: #45A9B1;" text="Logout" textFill="WHITE" AnchorPane.rightAnchor="10.0" />
+            <ImageView fitHeight="35.0" fitWidth="30.0" layoutX="157.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="20.0">
+               <image>
+                  <Image url="@../Images/iconBookRoom.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="txtThisPage" layoutX="196.0" layoutY="2.0" prefHeight="50.0" prefWidth="231.0" text="Book Room" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="55.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Javanese Text" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="35.0" prefHeight="200.0" prefWidth="230.0" style="-fx-background-color: #45A9B1;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="30.0" layoutX="10.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/iconHome.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="30.0" layoutX="15.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="10.0">
+               <image>
+                  <Image url="@../Images/iconBookRoom.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="30.0" layoutX="12.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="10.0">
+               <image>
+                  <Image url="@../Images/iconCustumer.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="30.0" layoutX="9.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="10.0">
+               <image>
+                  <Image url="@../Images/iconRoomList.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="30.0" layoutX="9.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="10.0">
+               <image>
+                  <Image url="@../Images/iconEmp.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="30.0" layoutX="9.0" layoutY="478.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="10.0">
+               <image>
+                  <Image url="@../Images/iconAddService.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="30.0" layoutX="9.0" layoutY="535.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="10.0">
+               <image>
+                  <Image url="@../Images/iconHistory.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="30.0" layoutX="10.0" layoutY="597.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="10.0">
+               <image>
+                  <Image url="@../Images/iconView.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="30.0" layoutX="7.0" layoutY="658.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="10.0">
+               <image>
+                  <Image url="@../Images/iconAdmin.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnHome" alignment="BASELINE_LEFT" buttonType="RAISED" layoutX="1.0" layoutY="161.0" prefHeight="60.0" prefWidth="230.0" style="-fx-border-radius: 0;" styleClass="btnDashBoard" text="Home" textFill="#eeeeee">
+               <font>
+                  <Font name="Javanese Text" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="55.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnBookRoom" alignment="BASELINE_LEFT" buttonType="RAISED" layoutY="221.0" prefHeight="60.0" prefWidth="230.0" style="-fx-border-radius: 0;" text="Book Room" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="Javanese Text" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="55.0" />
+               </padding>
+               <styleClass>
+                  <String fx:value="btnDashBoard" />
+                  <String fx:value="btnThisPage" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton fx:id="btnGuest" alignment="BASELINE_LEFT" buttonType="RAISED" layoutY="281.0" prefHeight="60.0" prefWidth="230.0" style="-fx-border-radius: 0;" styleClass="btnDashBoard" text="Guest" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="Javanese Text" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="55.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnRoomList" alignment="BASELINE_LEFT" buttonType="RAISED" layoutY="341.0" prefHeight="60.0" prefWidth="230.0" style="-fx-border-radius: 0;" styleClass="btnDashBoard" text="RoomList" textFill="#eeeeee" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="Javanese Text" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="55.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnEmployee" alignment="BASELINE_LEFT" buttonType="RAISED" layoutY="401.0" prefHeight="60.0" prefWidth="230.0" style="-fx-border-radius: 0;" styleClass="btnDashBoard" text="Employee" textFill="#eeeeee" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="Javanese Text" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="55.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnService" alignment="BASELINE_LEFT" buttonType="RAISED" layoutY="461.0" prefHeight="60.0" prefWidth="230.0" style="-fx-border-radius: 0;" styleClass="btnDashBoard" text="Service" textFill="#eeeeee" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="Javanese Text" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="55.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnView" alignment="BASELINE_LEFT" buttonType="RAISED" layoutY="521.0" prefHeight="60.0" prefWidth="230.0" style="-fx-border-radius: 0;" styleClass="btnDashBoard" text="View" textFill="#eeeeee" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="Javanese Text" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="55.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnHistory" alignment="BASELINE_LEFT" buttonType="RAISED" layoutY="581.0" prefHeight="60.0" prefWidth="230.0" style="-fx-border-radius: 0;" styleClass="btnDashBoard" text="History" textFill="#eeeeee" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="Javanese Text" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="55.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnAdmin" alignment="BASELINE_LEFT" buttonType="RAISED" layoutY="641.0" prefHeight="60.0" prefWidth="230.0" style="-fx-border-radius: 0;" styleClass="btnDashBoard" text="Admin" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="Javanese Text" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="55.0" />
+               </padding>
+            </JFXButton>
+            <ImageView fitHeight="150.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../Images/Capture.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="145.0" fitWidth="230.0" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../Images/gif.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="231.0">
+               <image>
+                  <Image url="@../Images/gif2.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btnBookRoomShowPane" buttonType="RAISED" layoutX="256.0" layoutY="66.0" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #45A9B1; -fx-background-radius: 0;" text="BookRoom" textFill="WHITE" AnchorPane.leftAnchor="240.0" AnchorPane.topAnchor="60.0">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/iconBooking.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="btnAddServiceShowPane" buttonType="RAISED" layoutX="393.0" layoutY="66.0" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #45A9B1; -fx-background-radius: 0;" text="Add Service" textFill="WHITE" AnchorPane.leftAnchor="375.0" AnchorPane.topAnchor="60.0">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/iconAddService.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="btnPaymentShowPane" buttonType="RAISED" layoutX="511.0" layoutY="60.0" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #45A9B1; -fx-background-radius: 0;" text="Payment" textFill="WHITE" AnchorPane.leftAnchor="510.0" AnchorPane.topAnchor="60.0">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/iconPayment.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <StackPane layoutX="248.0" layoutY="104.0" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="240.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="95.0">
+         <children>
+            <AnchorPane fx:id="paneBookRoom" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="paneBR_tableRoom" prefHeight="536.0" prefWidth="492.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="455.0" AnchorPane.topAnchor="38.0">
+                    <columns>
+                      <TableColumn fx:id="paneBR_colROOMID" prefWidth="141.0" text="House" />
+                      <TableColumn fx:id="paneBR_colRoomType" minWidth="0.0" prefWidth="491.0" text="House Type" />
+                        <TableColumn fx:id="paneBR_colRoomStatus" minWidth="0.0" prefWidth="155.0" text="Status" />
+                        <TableColumn fx:id="paneBR_colActive" minWidth="0.0" prefWidth="98.0" text="Active" />
+                        <TableColumn fx:id="paneBR_colPrice" prefWidth="314.0" text="Price" />
+                    </columns>
+                  </TableView>
+                  <ScrollPane hbarPolicy="NEVER" hmax="0.0" layoutY="38.0" prefHeight="577.0" prefWidth="450.0" style="-fx-background-color: #45A9B1;" vbarPolicy="NEVER" vmax="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="4.0">
+                     <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="949.0" prefWidth="455.0" style="-fx-background-color: #e9ead9;">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="60.0" prefWidth="450.0" style="-fx-background-color: #e9ead9;" text="Information" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="28.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="40.0" layoutY="101.0" prefHeight="21.0" prefWidth="59.0" text="ResID" textFill="#45a9b1" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="101.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="paneBR_labelRESID" layoutX="130.0" layoutY="101.0" prefHeight="51.0" prefWidth="132.0" text="RESID" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="101.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="40.0" layoutY="151.0" prefHeight="21.0" prefWidth="59.0" text="House:" textFill="#45a9b1" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="151.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="paneBR_labelROOMID" layoutX="130.0" layoutY="151.0" prefHeight="51.0" prefWidth="280.0" text="ROOMID" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="151.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="40.0" layoutY="201.0" prefHeight="51.0" prefWidth="76.0" text="EMPID:" textFill="#45a9b1" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="201.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="paneBR_labelEMPID" layoutX="131.0" layoutY="201.0" prefHeight="51.0" prefWidth="280.0" text="empid" AnchorPane.leftAnchor="131.0" AnchorPane.topAnchor="201.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="40.0" layoutY="251.0" prefHeight="51.0" prefWidth="76.0" text="Price:" textFill="#45a9b1" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="251.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="paneBR_labelResPrice" layoutX="131.0" layoutY="251.0" prefHeight="51.0" prefWidth="136.0" text="ResPrice" AnchorPane.topAnchor="251.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="359.0" layoutY="251.0" prefHeight="51.0" prefWidth="57.0" text="\$ / Day" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="251.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="40.0" layoutY="291.0" prefHeight="84.0" prefWidth="100.0" text="Guest " textFill="#028089" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="309.0" AnchorPane.topAnchor="291.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="30.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="40.0" layoutY="351.0" prefHeight="51.0" prefWidth="76.0" text="Passport:" textFill="#45a9b1" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="351.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="40.0" layoutY="401.0" prefHeight="51.0" prefWidth="76.0" text="Name:" textFill="#45a9b1" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="401.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="40.0" layoutY="451.0" prefHeight="51.0" prefWidth="76.0" text="Email:" textFill="#45a9b1" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="451.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="40.0" layoutY="501.0" prefHeight="51.0" prefWidth="76.0" text="Phone:" textFill="#45a9b1" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="501.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="paneBR_txtPassport" focusColor="#076850" labelFloat="true" layoutX="131.0" layoutY="351.0" prefHeight="31.0" prefWidth="268.0" unFocusColor="#076850" AnchorPane.leftAnchor="131.0" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="351.0" />
+                              <JFXTextField fx:id="paneBR_txtGuestName" focusColor="#076850" labelFloat="true" layoutX="131.0" layoutY="401.0" prefHeight="31.0" prefWidth="268.0" unFocusColor="#076850" AnchorPane.leftAnchor="131.0" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="401.0" />
+                              <JFXTextField fx:id="paneBR_txtEmail" focusColor="#076850" labelFloat="true" layoutX="131.0" layoutY="451.0" prefHeight="31.0" prefWidth="268.0" unFocusColor="#076850" AnchorPane.leftAnchor="131.0" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="451.0" />
+                              <JFXTextField fx:id="paneBR_txtPhone" focusColor="#076850" labelFloat="true" layoutX="131.0" layoutY="501.0" prefHeight="31.0" prefWidth="153.0" unFocusColor="#076850" AnchorPane.leftAnchor="131.0" AnchorPane.topAnchor="501.0" />
+                              <JFXComboBox fx:id="paneBR_Gender" layoutX="305.0" layoutY="501.0" prefHeight="31.0" prefWidth="111.0" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="501.0" />
+                              <JFXButton fx:id="paneBR_btnAddBookRoom" buttonType="RAISED" layoutX="40.0" layoutY="571.0" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #45A9B1; -fx-background-radius: 0;" text="BookRoom" textFill="WHITE" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="571.0">
+                                 <graphic>
+                                    <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Images/iconBooking.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></JFXButton>
+                              <JFXButton fx:id="paneBR_btnAddService" buttonType="RAISED" layoutX="286.0" layoutY="571.0" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #45A9B1; -fx-background-radius: 0;" text="Add Service" textFill="WHITE" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="571.0">
+                                 <graphic>
+                                    <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Images/iconAddService.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></JFXButton>
+                              <ImageView fitHeight="219.0" fitWidth="454.0" layoutX="1.0" layoutY="621.0" pickOnBounds="true" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="621.0">
+                                 <image>
+                                    <Image url="@../Images/Capture3.PNG" />
+                                 </image>
+                              </ImageView>
+                              <JFXButton fx:id="paneBR_btnRefresh" buttonType="RAISED" layoutX="300.0" layoutY="111.0" prefHeight="31.0" prefWidth="118.0" style="-fx-background-color: #45A9B1; -fx-background-radius: 0;" text="Refresh" textFill="WHITE" AnchorPane.rightAnchor="37.0" AnchorPane.topAnchor="111.0">
+                                 <graphic>
+                                    <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Images/iconRefresh%20(2).png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></JFXButton>
+                              <ImageView fitHeight="85.0" fitWidth="240.0" layoutX="53.0" layoutY="-3.0" opacity="0.39" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="67.0" AnchorPane.topAnchor="-3.0">
+                                 <image>
+                                    <Image url="@../Images/bgDB2.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+                  <JFXButton fx:id="paneBR_btnCheckInDate" buttonType="RAISED" layoutX="556.0" layoutY="4.0" prefHeight="31.0" prefWidth="158.0" style="-fx-background-color: #45A9B1; -fx-background-radius: 0;" text="Check" textFill="#fff8f8" AnchorPane.rightAnchor="455.0" AnchorPane.topAnchor="4.0">
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/iconCheckDate.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></JFXButton>
+                  <Label layoutX="14.0" layoutY="-4.0" prefHeight="21.0" prefWidth="59.0" text="From:" textFill="#45a9b1" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="-6.0">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="paneBR_DatepickerDatIn" editable="false" layoutX="66.0" layoutY="2.0" prefHeight="31.0" prefWidth="190.0" showWeekNumbers="true" style="-fx-background-color: #e9ead9; -fx-background-radius: 0;" AnchorPane.leftAnchor="66.0" AnchorPane.topAnchor="2.0" />
+                  <Label layoutX="299.0" layoutY="-6.0" prefHeight="51.0" prefWidth="30.0" text="To:" textFill="#45a9b1" AnchorPane.leftAnchor="270.0" AnchorPane.topAnchor="-6.0">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="paneBR_DatepickerDateOut" editable="false" layoutX="300.0" layoutY="2.0" prefHeight="31.0" prefWidth="190.0" showWeekNumbers="true" style="-fx-background-color: #e9ead9; -fx-background-radius: 0;" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="2.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="paneAddService" prefHeight="200.0" prefWidth="200.0" visible="false">
+               <children>
+                  <JFXButton fx:id="paneAS_btnSearch" buttonType="RAISED" prefHeight="31.0" prefWidth="100.0" style="-fx-background-color: #45A9B1; -fx-background-radius: 0;" text="Search" textFill="#fff8f8" AnchorPane.rightAnchor="350.0">
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="20.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/iconSearch.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></JFXButton>
+                  <JFXTextField fx:id="paneAS_txtSearch" focusColor="#076850" opacity="0.7" prefHeight="31.0" prefWidth="340.0" promptText="Input the house you want to search" unFocusColor="#07664e" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXTextField>
+                  <TableView fx:id="paneAS_tableRes" layoutX="14.0" prefHeight="290.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="455.0" AnchorPane.topAnchor="0.0">
+                     <columns>
+                        <TableColumn fx:id="paneAS_tableRes_colRESID" prefWidth="75.0" text="RESID" />
+                        <TableColumn fx:id="paneAS_tableRes_colROOMID" minWidth="0.0" prefWidth="150.0" text="HOUSE" />
+                        <TableColumn fx:id="paneAS_tableRes_colPassport" minWidth="0.0" prefWidth="56.0" text="PASSPORT" />
+                        <TableColumn fx:id="paneAS_tableRes_colGuestName" minWidth="0.0" prefWidth="71.0" text="GUESTNAME" />
+                        <TableColumn fx:id="paneAS_tableRes_colBookDate" prefWidth="143.0" text="BookDate" />
+                        <TableColumn fx:id="paneAS_tableRes_colDateOut" prefWidth="143.0" text="DateOut" />
+                        <TableColumn fx:id="paneAS_tableRes_colEMPID" prefWidth="143.0" text="EMPID" />
+                        <TableColumn fx:id="paneAS_tableRes_colResPrice" prefWidth="143.0" text="ResPrice" />
+                     </columns>
+                  </TableView>
+                  <TableView fx:id="paneAS_tableService" layoutX="24.0" layoutY="10.0" prefHeight="300.0" prefWidth="200.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="455.0" AnchorPane.topAnchor="330.0">
+                     <columns>
+                        <TableColumn fx:id="paneAS_tableService_colSERID" prefWidth="75.0" text="SERID" />
+                        <TableColumn fx:id="paneAS_tableService_colSerName" prefWidth="218.0" text="SerName" />
+                        <TableColumn fx:id="paneAS_tableService_colSerPrice" prefWidth="138.0" text="SerPrice" />
+                        <TableColumn fx:id="paneAS_tableService_colActive" prefWidth="68.0" text="Active" />
+                        <TableColumn fx:id="paneAS_tableService_colAddService" prefWidth="107.0" style="-fx-background: red;" />
+                     </columns>
+                  </TableView>
+                  <ScrollPane hbarPolicy="NEVER" layoutX="690.0" layoutY="51.0" prefHeight="569.0" prefWidth="450.0" style="-fx-background-color: #45A9B1;" vbarPolicy="NEVER" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="38.0">
+                     <content>
+                        <AnchorPane prefHeight="1080.0" prefWidth="465.0" style="-fx-background-color: #e9ead9;">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="60.0" prefWidth="0.0" style="-fx-background-color: #e9ead9;" text="Information" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="28.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="61.0" layoutY="118.0" prefHeight="21.0" prefWidth="59.0" text="ResID:" textFill="#45a9b1" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="90.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="paneAS_Info_labelRESID" layoutX="171.0" layoutY="90.0" prefHeight="51.0" prefWidth="119.0" text="RESID" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="90.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="paneAS_Info_labelROOMID" layoutX="181.0" layoutY="100.0" prefHeight="51.0" prefWidth="212.0" text="roomid" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="140.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="71.0" layoutY="128.0" prefHeight="21.0" prefWidth="59.0" text="House:" textFill="#45a9b1" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="140.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="72.0" layoutY="215.0" prefHeight="51.0" prefWidth="90.0" text="Passport:" textFill="#45a9b1" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="190.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="paneAS_Info_labelPassport" layoutX="182.0" layoutY="187.0" prefHeight="51.0" prefWidth="212.0" text="pp" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="190.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="40.0" layoutY="270.0" prefHeight="51.0" prefWidth="122.0" text="Guest's name:" textFill="#45a9b1" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="240.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="paneAS_Info_labelGuestName" layoutX="180.0" layoutY="270.0" prefHeight="51.0" prefWidth="198.0" text="name" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="240.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="40.0" layoutY="330.0" prefHeight="51.0" prefWidth="90.0" text="DateIn:" textFill="#45a9b1" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="290.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="paneAS_Info_labelDateIn" layoutX="180.0" layoutY="330.0" prefHeight="51.0" prefWidth="159.0" text="date in" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="290.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="paneAS_Info_labelDateOut" layoutX="180.0" layoutY="390.0" prefHeight="51.0" prefWidth="181.0" text="date out" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="340.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="40.0" layoutY="390.0" prefHeight="51.0" prefWidth="90.0" text="DateOut:" textFill="#45a9b1" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="340.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="40.0" layoutY="450.0" prefHeight="51.0" prefWidth="90.0" text="ResPrice:" textFill="#45a9b1" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="390.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="paneAS_Info_labelResPrice" layoutX="180.0" layoutY="450.0" prefHeight="51.0" prefWidth="212.0" text="money" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="390.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="412.0" layoutY="452.0" prefHeight="51.0" prefWidth="12.0" text="\$" AnchorPane.leftAnchor="412.0" AnchorPane.topAnchor="390.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="40.0" layoutY="510.0" prefHeight="51.0" prefWidth="122.0" text="Service used:" textFill="#45a9b1" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="440.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="157.0" layoutY="738.0" prefHeight="51.0" prefWidth="151.0" text="Total ServicePrice:" textFill="#45a9b1" AnchorPane.rightAnchor="157.0" AnchorPane.topAnchor="738.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="paneAS_Info_labelTotalPriceServiceUsed" alignment="CENTER" layoutX="319.0" layoutY="738.0" prefHeight="51.0" prefWidth="90.0" text="1000" AnchorPane.rightAnchor="56.0" AnchorPane.topAnchor="738.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="403.0" layoutY="738.0" prefHeight="51.0" prefWidth="12.0" text="\$" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="738.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TableView fx:id="paneAS_Info_tableSerUsed" layoutX="40.0" layoutY="570.0" prefHeight="221.0" prefWidth="10.0" style="-fx-border-color: #45a9b1;" styleClass="tableView" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="500.0">
+                                <columns>
+                                    <TableColumn fx:id="paneAS_Info_tableSerUsed_colNo" prefWidth="43.0" text="No." />
+                                  <TableColumn fx:id="paneAS_Info_tableSerUsed_colSerName" prefWidth="113.0" text="SerName" />
+                                  <TableColumn fx:id="paneAS_Info_tableSerUsed_colDate" prefWidth="77.0" text="Date" />
+                                    <TableColumn fx:id="paneAS_Info_tableSerUsed_colQuantity" prefWidth="73.0" text="Quantity" />
+                                    <TableColumn fx:id="paneAS_Info_tableSerUsed_colPrice" prefWidth="77.0" text="Price" />
+                                </columns>
+                              </TableView>
+                              <JFXButton fx:id="paneAS_Info_btnRefresh" buttonType="RAISED" layoutX="309.0" layoutY="100.0" prefHeight="31.0" prefWidth="130.0" style="-fx-background-color: #45A9B1; -fx-background-radius: 0;" text="Refresh" textFill="#fff8f8" AnchorPane.rightAnchor="40.0">
+                                 <graphic>
+                                    <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Images/iconRefresh%20(2).png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></JFXButton>
+                              <JFXButton fx:id="paneAS_Info_btnDeleteService" buttonType="RAISED" layoutX="309.0" layoutY="520.0" prefHeight="31.0" prefWidth="141.0" style="-fx-background-color: #45A9B1; -fx-background-radius: 0;" text="Delete Service" textFill="#fff8f8" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="450.0">
+                                 <graphic>
+                                    <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Images/iconDelete.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></JFXButton>
+                              <ImageView fitHeight="85.0" fitWidth="240.0" layoutX="85.0" layoutY="-3.0" opacity="0.39" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="75.0" AnchorPane.topAnchor="-3.0">
+                                 <image>
+                                    <Image url="@../Images/bgDB2.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="187.0" fitWidth="334.0" layoutX="40.0" layoutY="773.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="773.0">
+                                 <image>
+                                    <Image url="@../Images/Capture4.PNG" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </content></ScrollPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="panePayment" prefHeight="724.0" prefWidth="955.0" visible="false">
+               <children>
+                  <JFXButton fx:id="panePM_btnSearch" buttonType="RAISED" prefHeight="31.0" prefWidth="112.0" style="-fx-background-color: #45A9B1; -fx-background-radius: 0;" text="Search" textFill="#fff8f8" AnchorPane.rightAnchor="338.0" AnchorPane.topAnchor="0.0">
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="20.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/iconSearch.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></JFXButton>
+                  <JFXTextField fx:id="panePM_txtSearch" focusColor="#076850" opacity="0.7" prefHeight="31.0" prefWidth="320.0" promptText="Input the name you want to search" unFocusColor="#07664e" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXTextField>
+                  <TableView fx:id="panePM_tableRes" prefHeight="300.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="455.0" AnchorPane.topAnchor="0.0">
+                     <columns>
+                        <TableColumn fx:id="panePM_tableRes_colRESID" prefWidth="75.0" text="RESID" />
+                        <TableColumn fx:id="panePM_tableRes_colRoomID" minWidth="0.0" prefWidth="150.0" text="HOUSE" />
+                        <TableColumn fx:id="panePM_tableRes_colPassport" minWidth="0.0" prefWidth="56.0" text="PASSPORT" />
+                        <TableColumn fx:id="panePM_tableRes_colGuestName" minWidth="0.0" prefWidth="71.0" text="GUESTNAME" />
+                        <TableColumn fx:id="panePM_tableRes_colBookDate" prefWidth="143.0" text="BookDate" />
+                        <TableColumn fx:id="panePM_tableRes_colDateOut" prefWidth="143.0" text="DateOut" />
+                        <TableColumn fx:id="panePM_tableRes_colEMPID" prefWidth="143.0" text="EMPID" />
+                        <TableColumn fx:id="panePM_tableRes_colResPrice" prefWidth="143.0" text="ResPrice" />
+                     </columns>
+                  </TableView>
+                  <ScrollPane hbarPolicy="NEVER" layoutY="55.0" prefHeight="565.0" prefWidth="450.0" style="-fx-background-color: #45A9B1;" vbarPolicy="NEVER" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="38.0">
+                     <content>
+                        <AnchorPane prefHeight="1103.0" prefWidth="450.0" style="-fx-background-color: #e9ead9;">
+                           <children>
+                              <TableView fx:id="panePM_info_tableSerUsed" layoutX="40.0" layoutY="625.0" prefHeight="245.0" prefWidth="370.0" style="-fx-border-color: #45a9b1;" styleClass="tableView" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="550.0">
+                                 <columns>
+                                    <TableColumn fx:id="panePM_info_tableSerUsed_colNo" prefWidth="43.0" text="No." />
+                                    <TableColumn fx:id="panePM_info_tableSerUsed_colSerName" prefWidth="73.6666259765625" text="SerName" />
+                                    <TableColumn fx:id="panePM_info_tableSerUsed_colDate" prefWidth="81.3333740234375" text="Date" />
+                                    <TableColumn fx:id="panePM_info_tableSerUsed_colQuantity" prefWidth="65.6666259765625" text="Quantity" />
+                                    <TableColumn fx:id="panePM_info_tableSerUsed_colPrice" prefWidth="103.0" text="Price" />
+                                 </columns>
+                              </TableView>
+                              <ImageView fitHeight="185.0" fitWidth="389.0" layoutX="45.0" layoutY="-13.0" opacity="0.9" pickOnBounds="true" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="-13.0">
+                                 <image>
+                                    <Image url="@../Images/Capture3.PNG" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="47.0" layoutY="143.0" prefHeight="21.0" prefWidth="59.0" text="ResID:" textFill="#45a9b1" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="140.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="panePM_info_labelRESID" layoutX="157.0" layoutY="143.0" prefHeight="51.0" prefWidth="108.0" text="RESID" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="140.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="panePM_info_labelPassport" layoutX="169.0" layoutY="266.0" prefHeight="51.0" prefWidth="212.0" text="pp" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="240.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="49.0" layoutY="284.0" prefHeight="51.0" prefWidth="90.0" text="Passport:" textFill="#45a9b1" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="240.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="47.0" layoutY="206.0" prefHeight="21.0" prefWidth="59.0" text="House:" textFill="#45a9b1" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="190.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="panePM_info_labelROOMID" layoutX="165.0" layoutY="206.0" prefHeight="51.0" prefWidth="212.0" text="roomid" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="190.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="40.0" layoutY="323.0" prefHeight="51.0" prefWidth="122.0" text="Guest's name:" textFill="#45a9b1" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="290.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="panePM_info_labelGuestName" layoutX="158.0" layoutY="323.0" prefHeight="51.0" prefWidth="198.0" text="name" AnchorPane.leftAnchor="158.0" AnchorPane.topAnchor="290.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="40.0" layoutY="383.0" prefHeight="51.0" prefWidth="90.0" text="DateIn:" textFill="#45a9b1" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="340.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="40.0" layoutY="443.0" prefHeight="51.0" prefWidth="90.0" text="DateOut:" textFill="#45a9b1" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="390.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="panePM_info_labelDateIn" layoutX="158.0" layoutY="383.0" prefHeight="51.0" prefWidth="180.0" text="date in" AnchorPane.leftAnchor="158.0" AnchorPane.topAnchor="340.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="panePM_info_labelDateOut" layoutX="158.0" layoutY="443.0" prefHeight="51.0" prefWidth="159.0" text="date out" AnchorPane.leftAnchor="158.0" AnchorPane.topAnchor="390.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="40.0" layoutY="503.0" prefHeight="51.0" prefWidth="90.0" text="ResPrice:" textFill="#45a9b1" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="440.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="panePM_info_labelResPrice" layoutX="158.0" layoutY="503.0" prefHeight="51.0" prefWidth="125.0" text="money" AnchorPane.leftAnchor="158.0" AnchorPane.topAnchor="440.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="275.0" layoutY="503.0" prefHeight="51.0" prefWidth="13.0" text="\$" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="440.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="393.0" layoutY="863.0" prefHeight="51.0" prefWidth="12.0" text="\$" AnchorPane.rightAnchor="40.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="panePM_info_labelTotalServiceUsed" alignment="CENTER" layoutX="310.0" layoutY="812.0" prefHeight="51.0" prefWidth="90.0" text="1000" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="812.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="205.0" layoutY="812.0" prefHeight="51.0" prefWidth="107.0" text="Service used:" textFill="#45a9b1" AnchorPane.rightAnchor="138.0" AnchorPane.topAnchor="812.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="40.0" layoutY="560.0" prefHeight="51.0" prefWidth="122.0" text="Service used:" textFill="#45a9b1" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="490.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton fx:id="panePM_info_btnPayment" buttonType="RAISED" layoutX="252.0" layoutY="929.0" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #45A9B1; -fx-background-radius: 0;" text="Payment" textFill="WHITE" AnchorPane.rightAnchor="48.0" AnchorPane.topAnchor="929.0">
+                                 <graphic>
+                                    <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Images/iconPayment.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></JFXButton>
+                              <Label layoutX="36.0" layoutY="865.0" prefHeight="51.0" prefWidth="107.0" text="Total Price:" textFill="#45a9b1" AnchorPane.leftAnchor="36.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="panePM_info_totalPrice" alignment="CENTER" layoutX="309.0" layoutY="863.0" prefHeight="51.0" prefWidth="90.0" text="1000" AnchorPane.rightAnchor="51.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="397.0" layoutY="812.0" prefHeight="51.0" prefWidth="12.0" text="\$" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="812.0">
+                                 <font>
+                                    <Font name="Javanese Text" size="18.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton fx:id="panePM_info_btnRefresh" buttonType="RAISED" layoutX="300.0" layoutY="153.0" prefHeight="31.0" prefWidth="112.0" style="-fx-background-color: #45A9B1; -fx-background-radius: 0;" text="Refresh" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="150.0">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Images/iconRefresh%20(2).png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></JFXButton>
+                              <JFXButton fx:id="panePM_info_btnInvoice" buttonType="RAISED" layoutX="39.0" layoutY="929.0" prefHeight="31.0" prefWidth="150.0" style="-fx-background-color: #45A9B1; -fx-background-radius: 0;" text="Invoice" textFill="WHITE" AnchorPane.leftAnchor="39.0" AnchorPane.topAnchor="929.0">
+                                 <graphic>
+                                    <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Images/iconView.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></JFXButton>
+                           </children>
+                        </AnchorPane>
+                     </content></ScrollPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+      <JFXButton fx:id="if_btnBookToday" buttonType="RAISED" layoutX="649.0" layoutY="60.0" prefHeight="31.0" prefWidth="170.0" style="-fx-background-color: #45A9B1; -fx-background-radius: 0;" text="Reservation Room" textFill="WHITE" AnchorPane.leftAnchor="645.0" AnchorPane.topAnchor="60.0">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/iconPos2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="if_btnResTerm" buttonType="RAISED" layoutX="821.0" layoutY="60.0" prefHeight="31.0" prefWidth="159.0" style="-fx-background-color: #45A9B1; -fx-background-radius: 0;" text="Reservation Term" textFill="WHITE" AnchorPane.leftAnchor="820.0" AnchorPane.topAnchor="60.0">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/iconBookRoom.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

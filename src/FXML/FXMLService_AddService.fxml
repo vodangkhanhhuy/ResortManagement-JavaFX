@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="356.0" prefWidth="446.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FXMLService_AddService">
+   <children>
+      <Label layoutX="46.0" layoutY="96.0" prefHeight="51.0" prefWidth="130.0" text="Service's Name:" textFill="#45a9b1" AnchorPane.leftAnchor="46.0" AnchorPane.topAnchor="96.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" prefHeight="78.0" prefWidth="519.0" style="-fx-background-color: linear-gradient(from 15% 15% to 100% 100%,  #8ECBD0 ,  #D5EBED );" text="Add Service" textAlignment="CENTER" textFill="GREY" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Javanese Text" size="28.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtSerName" focusColor="#076850" labelFloat="true" layoutX="176.0" layoutY="106.0" prefHeight="31.0" prefWidth="268.0" unFocusColor="#076850" AnchorPane.leftAnchor="176.0" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="106.0" />
+      <Label layoutX="45.0" layoutY="199.0" prefHeight="51.0" prefWidth="130.0" text="Active:" textFill="#45a9b1" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="199.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtPrice" focusColor="#076850" labelFloat="true" layoutX="185.0" layoutY="158.0" prefHeight="31.0" prefWidth="149.0" unFocusColor="#076850" AnchorPane.leftAnchor="185.0" AnchorPane.rightAnchor="118.0" AnchorPane.topAnchor="158.0" />
+      <JFXCheckBox fx:id="checkBoxActive" checkedColor="#45a9b1" ellipsisString="" layoutX="185.0" layoutY="199.0" prefHeight="51.0" prefWidth="37.0" textFill="#45a9b1" unCheckedColor="#1e3e40">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </JFXCheckBox>
+      <Label layoutX="45.0" layoutY="148.0" prefHeight="51.0" prefWidth="130.0" text="Price:" textFill="#45a9b1" AnchorPane.topAnchor="148.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnAdd" buttonType="RAISED" layoutX="282.0" layoutY="279.0" prefHeight="31.0" prefWidth="130.0" style="-fx-background-color: #45A9B1; -fx-background-radius: 0;" text="Save" textFill="#fff8f8" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="44.0">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/iconSave.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label layoutX="325.0" layoutY="163.0" text="\$" />
+      <Line endX="100.0" layoutX="-27.0" layoutY="272.0" opacity="0.82" startX="430.0" stroke="#5f684f" AnchorPane.bottomAnchor="83.5" AnchorPane.rightAnchor="42.5" />
+   </children>
+</AnchorPane>

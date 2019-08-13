@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="492.0" prefWidth="1082.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FXMLBookRoom_BookToday">
+    <stylesheets>
+        <URL value="@/Css/CSSMain.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="30.0" layoutY="25.0" prefHeight="51.0" prefWidth="62.0" text="Today:" textFill="#45a9b1" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelGetToDay" layoutX="133.0" layoutY="20.0" prefHeight="51.0" prefWidth="332.0" text="get today" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableRes" layoutX="36.0" layoutY="71.0" prefHeight="396.0" prefWidth="671.0" style="-fx-border-color: grey;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="70.0">
+         <columns>
+            <TableColumn fx:id="tableRes_colRESID" prefWidth="75.0" text="RESID" />
+            <TableColumn fx:id="tableRes_colROOMID" minWidth="0.0" prefWidth="122.0" text="HOUSE" />
+            <TableColumn fx:id="tableRes_colPassport" minWidth="0.0" prefWidth="138.0" text="PASSPORT" />
+            <TableColumn fx:id="tableRes_colGuestName" minWidth="0.0" prefWidth="155.0" text="GUESTNAME" />
+            <TableColumn fx:id="tableRes_colBookDate" prefWidth="127.0" text="BookDate" />
+            <TableColumn fx:id="tableRes_colDateOut" prefWidth="161.0" text="DateOut" />
+            <TableColumn fx:id="tableRes_colEMPID" prefWidth="149.0" text="EMPID" />
+            <TableColumn fx:id="tableRes_colResPrice" prefWidth="131.0" text="ResPrice" />
+         </columns>
+      </TableView>
+      <Label fx:id="labelDateOut" layoutX="864.0" layoutY="301.0" prefHeight="51.0" prefWidth="77.0" text="date out" AnchorPane.leftAnchor="860.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="300.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="703.0" layoutY="98.0" prefHeight="21.0" prefWidth="59.0" text="House:" textFill="#45a9b1" AnchorPane.leftAnchor="708.0" AnchorPane.topAnchor="100.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelROOMID" layoutX="786.0" layoutY="100.0" prefHeight="51.0" prefWidth="109.0" text="roomid" AnchorPane.leftAnchor="860.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="100.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="720.0" layoutY="150.0" prefHeight="51.0" prefWidth="90.0" text="Passport:" textFill="#45a9b1" AnchorPane.leftAnchor="708.0" AnchorPane.topAnchor="150.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPassport" layoutX="942.0" layoutY="163.0" prefHeight="51.0" prefWidth="102.0" text="pp" AnchorPane.leftAnchor="860.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="150.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="717.0" layoutY="201.0" prefHeight="51.0" prefWidth="122.0" text="Guest's name:" textFill="#45a9b1" AnchorPane.leftAnchor="708.0" AnchorPane.topAnchor="200.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelGuestName" layoutX="924.0" layoutY="201.0" prefHeight="51.0" prefWidth="109.0" text="name" AnchorPane.leftAnchor="860.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="200.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="720.0" layoutY="251.0" prefHeight="51.0" prefWidth="90.0" text="DateIn:" textFill="#45a9b1" AnchorPane.leftAnchor="708.0" AnchorPane.topAnchor="250.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelDateIn" layoutX="891.0" layoutY="251.0" prefHeight="51.0" prefWidth="77.0" text="date in" AnchorPane.leftAnchor="860.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="250.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="720.0" layoutY="301.0" prefHeight="51.0" prefWidth="90.0" text="DateOut:" textFill="#45a9b1" AnchorPane.leftAnchor="708.0" AnchorPane.topAnchor="300.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnQuitBooking" buttonType="RAISED" layoutX="925.0" layoutY="427.0" prefHeight="31.0" prefWidth="184.0" style="-fx-background-color: #45A9B1; -fx-background-radius: 0;" text="Quit this Booking" textFill="#fff8f8" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="420.0">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/iconDelete.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <Label layoutX="720.0" layoutY="343.0" prefHeight="51.0" prefWidth="90.0" text="EMPID:" textFill="#45a9b1" AnchorPane.leftAnchor="708.0" AnchorPane.topAnchor="350.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelEMPID" layoutX="864.0" layoutY="343.0" prefHeight="51.0" prefWidth="77.0" text="empID" AnchorPane.leftAnchor="860.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="350.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnSearch" buttonType="RAISED" layoutX="707.0" layoutY="70.0" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: #45A9B1; -fx-background-radius: 0;" text="Search" textFill="#fff8f8">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="20.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/iconSearch.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXTextField fx:id="txtSearch" focusColor="#076850" labelFloat="true" layoutX="856.0" layoutY="70.0" prefHeight="31.0" prefWidth="245.0" unFocusColor="#076850" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="70.0" />
+      <JFXButton fx:id="btnBookingToday" buttonType="RAISED" layoutX="294.0" layoutY="20.0" prefHeight="31.0" prefWidth="147.0" style="-fx-background-color: #45A9B1; -fx-background-radius: 0;" text="Booking Today" textFill="#fff8f8" AnchorPane.rightAnchor="641.0" AnchorPane.topAnchor="20.0">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/iconBooking.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+   </children>
+</AnchorPane>

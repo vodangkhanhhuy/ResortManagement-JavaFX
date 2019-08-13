@@ -1,0 +1,7 @@
+Create table Service
+(
+	SERID varchar(6) primary key,
+	SerName varchar(100) not null,
+	SerPrice int not null,
+	Active bit not null
+)

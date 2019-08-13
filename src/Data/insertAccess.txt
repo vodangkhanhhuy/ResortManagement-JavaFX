@@ -1,0 +1,1 @@
+insert into dbo.Accessright values('EMP001','True','True','True','True','True','True','True','True','True')

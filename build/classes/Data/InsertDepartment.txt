@@ -1,0 +1,1 @@
+insert into Department values('DEP001', 'Other')

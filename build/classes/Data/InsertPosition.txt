@@ -1,0 +1,1 @@
+insert into Position values('POS001','Other')

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="298.0" prefWidth="443.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FXMLService_AddProduct">
+   <children>
+      <Label layoutX="41.0" layoutY="96.0" prefHeight="51.0" prefWidth="130.0" text="PROID:" textFill="#45a9b1" AnchorPane.leftAnchor="41.0" AnchorPane.topAnchor="96.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" prefHeight="78.0" prefWidth="519.0" style="-fx-background-color: linear-gradient(from 15% 15% to 100% 100%,  #8ECBD0 ,  #D5EBED );" text="Add Product" textAlignment="CENTER" textFill="GREY" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Javanese Text" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="148.0" prefHeight="51.0" prefWidth="130.0" text="Product's Name:" textFill="#45a9b1" AnchorPane.topAnchor="148.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnAdd" buttonType="RAISED" layoutX="282.0" layoutY="214.0" prefHeight="31.0" prefWidth="130.0" style="-fx-background-color: #45A9B1; -fx-background-radius: 0;" text="Save" textFill="#fff8f8" AnchorPane.bottomAnchor="40.0" AnchorPane.rightAnchor="40.0">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/iconSave.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label fx:id="txtProID" layoutX="181.0" layoutY="96.0" prefHeight="51.0" prefWidth="119.0" AnchorPane.leftAnchor="181.0" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="96.0">
+         <font>
+            <Font name="Javanese Text" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtProName" focusColor="#076850" labelFloat="true" layoutX="181.0" layoutY="158.0" prefHeight="31.0" unFocusColor="#076850" AnchorPane.leftAnchor="181.0" AnchorPane.rightAnchor="39.0" />
+   </children>
+</AnchorPane>

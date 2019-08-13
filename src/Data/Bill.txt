@@ -1,0 +1,8 @@
+create table Bill
+(
+	BILLID int identity primary key,
+	RESID varchar(6) not null,
+	PaymentDate datetime not null,
+	TotalPrice int not null,
+	foreign key (RESID) references dbo.Reservation (RESID)
+)

@@ -1,0 +1,9 @@
+Create table ServiceDetail
+(	
+	ID int identity primary key,
+	ProID varchar (6) not null,
+	SERID varchar(6) not null,
+	Quantity int not null default 1,
+	foreign key (ProID) references dbo.Product (ProID),
+	foreign key (SERID) references dbo.Service (SERID)
+)

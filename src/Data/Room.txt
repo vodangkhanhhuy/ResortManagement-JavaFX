@@ -1,0 +1,8 @@
+Create table Room
+(
+	ROOMID varchar(4) primary key ,
+	RoomType varchar(50) not null,
+	RoomStatus bit not null,
+	Active bit not null,
+	RoomPrice int not null
+)

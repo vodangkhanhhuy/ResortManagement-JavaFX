@@ -1,0 +1,18 @@
+Create table Employee
+ (
+	EMPID varchar(6) primary key,
+	EmpName varchar(50) not null,
+	Address varchar(100) not null, 
+	Gender bit not null,
+	Email varchar(50) not null,
+	Phone varchar(20) not null,
+	DEPID varchar(6) not null,
+	POSID  varchar(6) not null,
+	UserName varchar (50),
+	Password varchar(50),
+	ROLEID varchar(6),
+	Active bit,
+	foreign key (DEPID) references dbo.Department (DEPID),
+	foreign key (POSID) references dbo.Position (POSID),
+	foreign key (ROLEID) references dbo.RoleUser (ROLEID)
+ ) 

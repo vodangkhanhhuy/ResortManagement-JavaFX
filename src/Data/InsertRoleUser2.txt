@@ -1,0 +1,1 @@
+insert into RoleUser values('ROL002','Employee')

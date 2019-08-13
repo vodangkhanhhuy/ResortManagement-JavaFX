@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FXMLLogin">
+   <children>
+      <Pane layoutX="471.0" layoutY="10.0" prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: #369C8D;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="310.0" fitWidth="400.0" layoutX="13.0" layoutY="-15.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Images/CaptureLogin.PNG" />
+               </image>
+            </ImageView>
+            <Pane layoutX="-76.0" layoutY="361.0" prefHeight="56.0" prefWidth="529.0" rotate="20.0" style="-fx-background-color: #8DBBAC;" />
+            <Pane layoutX="-108.0" layoutY="390.0" prefHeight="290.0" prefWidth="527.0" rotate="16.0" style="-fx-background-color: #D2E0D9;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="204.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" rotate="-16.0">
+                     <image>
+                        <Image url="@../Images/iLogin.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #e9ead9;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="149.0" layoutY="41.0" prefHeight="80.0" prefWidth="200.0" text="Sign In" textFill="#369c8d" AnchorPane.leftAnchor="149.0" AnchorPane.rightAnchor="151.0" AnchorPane.topAnchor="41.0">
+               <font>
+                  <Font name="Javanese Text" size="36.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="idUserName" focusColor="#369c8d" labelFloat="true" layoutX="75.0" layoutY="170.0" prefWidth="350.0" promptText="Username" unFocusColor="#369c8d" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="163.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="idPassword" focusColor="#369c8d" labelFloat="true" layoutX="74.0" layoutY="264.0" prefWidth="350.0" promptText="Password" unFocusColor="#369c8d" AnchorPane.leftAnchor="74.0" AnchorPane.rightAnchor="76.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="btnLogin" buttonType="RAISED" layoutX="174.0" layoutY="411.0" prefHeight="37.0" prefWidth="150.0" style="-fx-background-color: #369C8D;" text="Login" textFill="WHITE" AnchorPane.leftAnchor="174.0" AnchorPane.rightAnchor="176.0" />
+            <Label layoutX="307.0" layoutY="338.0" prefWidth="117.0" text="Forgot Password?" textFill="#70ab98" AnchorPane.rightAnchor="78.0">
+               <font>
+                  <Font name="Javanese Text" size="15.0" />
+               </font>
+            </Label>
+            <Pane layoutX="307.0" layoutY="370.0" prefHeight="1.0" prefWidth="120.0" style="-fx-background-color: #369C8D;" AnchorPane.rightAnchor="77.0" />
+            <JFXButton fx:id="btnForgot" buttonType="RAISED" layoutX="301.0" layoutY="346.0" opacity="0.0" prefHeight="31.0" prefWidth="126.0" AnchorPane.rightAnchor="77.0" />
+            <Label fx:id="idError" layoutX="43.0" layoutY="338.0" prefHeight="43.0" prefWidth="236.0" textFill="#70ab98">
+               <font>
+                  <Font name="Javanese Text" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

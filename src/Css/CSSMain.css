@@ -1,0 +1,105 @@
+
+
+/*************/
+.btnDashBoard:hover{
+    -fx-text-fill: #75582c;
+/*    -fx-border-color: #1BBC9B;*/
+}
+.btnThisPage{
+    -fx-background-color: rgba(252, 255, 246, 0.2);
+/*    -fx-fill-height: 25px;*/
+}
+.btnChangePane:visited{
+    -fx-border-color: black;
+    -fx-background-color: #45A9B1;
+    -fx-text-fill: #75582c;
+}
+
+
+.table-view{
+   -fx-background-color: transparent;
+}
+
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: #52A0AD;
+}
+
+/*all row*/
+.table-view .table-cell{
+    -fx-text-fill:  black;
+}
+/*cell 1*/
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #FFFFFF;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+/*cell 2*/
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #EAF3F3;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */  
+}
+/*seleted row*/
+.table-row-cell:selected {
+    -fx-background-color: #d3d3d3;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+    -fx-text-fill: white;
+}
+.table-row-cell:empty{
+    -fx-background-color: white;
+}
+.table-row-cell:empty .table-cell{
+    -fx-border-width: 0px;
+}
+
+/*pagehome*/
+.homeBanner{
+    -fx-background-image: url("../Images/banner2.jpg");
+    -fx-background-position: center;
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: rgba(177,89,0,0.72);
+
+}
+.homeAvatar{
+    -fx-background-color: white;
+    -fx-background-position: center;
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+.home_MoreDetails:hover{
+    -fx-border-color: #2f726e;
+}
+
+#sale1{
+    -fx-background-image: url("../Images/sale1.jpg");
+    -fx-background-position: center;
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+#sale2{
+    -fx-background-image: url("../Images/sale2.jpg");
+    -fx-background-position: center;
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+#sale3{
+    -fx-background-image: url("../Images/sale3.jpg");
+    -fx-background-position: center;
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+#avatarAccount{
+    -fx-background-image: url("../Images/iconAccount2.png");
+    -fx-background-position: center;
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+

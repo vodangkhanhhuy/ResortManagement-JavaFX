@@ -1,0 +1,5 @@
+create table Position
+ (
+	POSID varchar(6) primary key,
+	PosName Varchar(50)
+ )

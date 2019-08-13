@@ -1,0 +1,8 @@
+ Create table Guest
+ (
+	PASSPORT varchar(20) primary key,
+	GuestName varchar(50) not null,
+	Email varchar(50),
+	Phone varchar(20),
+	Gender bit not null
+)
